@@ -1,0 +1,25 @@
+@viewport-large-tv--max-width: 7680px;
+@viewport-large-tv--min-width: 1201x;
+@viewport-desktop--max-width: 1200px;
+@viewport-desktop--min-width: 1025px;
+@viewport-notebook-and-laptop--max-width: 1024px;
+@viewport-notebook-and-laptop--min-width: 769px;
+@viewport-tablet--max-width: 768px;
+@viewport-tablet--min-width: 481px;
+@viewport-mobile-phone--max-width: 480px;
+@viewport-mobile-phone--min-width: 320px;
+
+@viewport--mobile-phone: ~"screen and (max-width: @{viewport-mobile-phone--max-width})";
+@viewport--tablet: ~"screen and (min-width: @{viewport-tablet--min-width}) and (max-width: @{viewport-tablet--max-width})";
+@viewport--notebook-and-laptop: ~"print, screen and (min-width: @{viewport-notebook-and-laptop--min-width}) and (max-width: @{viewport-notebook-and-laptop--max-width})";
+@viewport--desktop: ~"screen and (min-width: @{viewport-desktop--min-width}) and (max-width: @{viewport-desktop--max-width})";
+@viewport--large-tv: ~"screen and (min-width: @{viewport-large-tv--min-width}) and (max-width: @{viewport-large-tv--max-width})";
+
+@viewport--tablet-max: ~"screen and (max-width: @{viewport-tablet--max-width})";
+@viewport--tablet-min-until-desktop: ~"print, screen and (min-width: @{viewport-tablet--min-width})";
+@viewport--desktop-until-tv-min: ~"screen and (min-width: @{viewport-desktop--min-width})";
+@viewport--large-desktop-until-large-tv-max: ~"screen and (min-width: @{viewport-desktop--max-width})";
+
+@viewport--mobile-and-tablet: ~"screen and (max-width: @{viewport-tablet--max-width})";
+@viewport--tablet-and-desktop: ~"screen and (min-width: @{viewport-tablet--min-width})";
+@viewport--desktop-and-tv: ~"screen and (min-width: @{viewport-desktop--min-width})";

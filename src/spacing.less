@@ -1,0 +1,259 @@
+@import "spacing.varies.less";
+
+.make-spacing(@variant, @prefix: none) {
+    @value: 'spacing--@{variant}';
+
+    .inner-spacing when (@prefix = none) {
+        &--@{variant} { padding: @@value !important; }
+        &--@{variant}-top { padding-top: @@value !important; }
+        &--@{variant}-right { padding-right: @@value !important; }
+        &--@{variant}-bottom { padding-bottom: @@value !important; }
+        &--@{variant}-left { padding-left: @@value !important; }
+
+        &--@{variant}-horizontal {
+            padding-left: @@value !important;
+            padding-right: @@value !important;
+        }
+
+        &--@{variant}-vertical {
+            padding-top: @@value !important;
+            padding-bottom: @@value !important;
+        }
+    }
+
+    .outer-spacing when (@prefix = none) {
+        &--@{variant} { margin: @@value !important; }
+        &--@{variant}-top { margin-top: @@value !important; }
+        &--@{variant}-right { margin-right: @@value !important; }
+        &--@{variant}-bottom { margin-bottom: @@value !important; }
+        &--@{variant}-left { margin-left: @@value !important; }
+
+        &--@{variant}-horizontal {
+            margin-left: @@value !important;
+            margin-right: @@value !important;
+        }
+
+        &--@{variant}-vertical {
+            margin-top: @@value !important;
+            margin-bottom: @@value !important;
+        }
+    }
+
+    .inner-spacing when (iskeyword(@prefix)) {
+        &--@{variant}-@{prefix} { padding: @@value !important; }
+        &--@{variant}-top-@{prefix} { padding-top: @@value !important; }
+        &--@{variant}-right-@{prefix} { padding-right: @@value !important; }
+        &--@{variant}-bottom-@{prefix} { padding-bottom: @@value !important; }
+        &--@{variant}-left-@{prefix} { padding-left: @@value !important; }
+
+        &--@{variant}-horizontal-@{prefix} {
+            padding-left: @@value !important;
+            padding-right: @@value !important;
+        }
+
+        &--@{variant}-vertical-@{prefix} {
+            padding-top: @@value !important;
+            padding-bottom: @@value !important;
+        }
+    }
+
+    .outer-spacing when (iskeyword(@prefix)) {
+        &--@{variant}-@{prefix} { margin: @@value !important; }
+        &--@{variant}-top-@{prefix} { margin-top: @@value !important; }
+        &--@{variant}-right-@{prefix} { margin-right: @@value !important; }
+        &--@{variant}-bottom-@{prefix} { margin-bottom: @@value !important; }
+        &--@{variant}-left-@{prefix} { margin-left: @@value !important; }
+
+        &--@{variant}-horizontal-@{prefix} {
+            margin-left: @@value !important;
+            margin-right: @@value !important;
+        }
+
+        &--@{variant}-vertical-@{prefix} {
+            margin-top: @@value !important;
+            margin-bottom: @@value !important;
+        }
+    }
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.make-spacing(none);
+.make-spacing(xxsmall);
+.make-spacing(xsmall);
+.make-spacing(small);
+.make-spacing(medium);
+.make-spacing(large);
+.make-spacing(xlarge);
+.make-spacing(xxlarge);
+.make-spacing(3xlarge);
+.make-spacing(4xlarge);
+.make-spacing(5xlarge);
+.make-spacing(6xlarge);
+.make-spacing(7xlarge);
+.make-spacing(8xlarge);
+.make-spacing(9xlarge);
+.make-spacing(10xlarge);
+.make-spacing(11xlarge);
+.make-spacing(12xlarge);
+.make-spacing(13xlarge);
+.make-spacing(14xlarge);
+.make-spacing(15xlarge);
+.make-spacing(16xlarge);
+.make-spacing(17xlarge);
+.make-spacing(18xlarge);
+.make-spacing(19xlarge);
+.make-spacing(20xlarge);
+
+@media @viewport--mobile-phone {
+    .make-spacing(none, @prefix: sm);
+    .make-spacing(xxsmall, @prefix: sm);
+    .make-spacing(xsmall, @prefix: sm);
+    .make-spacing(small, @prefix: sm);
+    .make-spacing(medium, @prefix: sm);
+    .make-spacing(large, @prefix: sm);
+    .make-spacing(xlarge, @prefix: sm);
+    .make-spacing(xxlarge, @prefix: sm);
+    .make-spacing(3xlarge, @prefix: sm);
+    .make-spacing(4xlarge, @prefix: sm);
+    .make-spacing(5xlarge, @prefix: sm);
+    .make-spacing(6xlarge, @prefix: sm);
+    .make-spacing(7xlarge, @prefix: sm);
+    .make-spacing(8xlarge, @prefix: sm);
+    .make-spacing(9xlarge, @prefix: sm);
+    .make-spacing(10xlarge, @prefix: sm);
+    .make-spacing(11xlarge, @prefix: sm);
+    .make-spacing(12xlarge, @prefix: sm);
+    .make-spacing(13xlarge, @prefix: sm);
+    .make-spacing(14xlarge, @prefix: sm);
+    .make-spacing(15xlarge, @prefix: sm);
+    .make-spacing(16xlarge, @prefix: sm);
+    .make-spacing(17xlarge, @prefix: sm);
+    .make-spacing(18xlarge, @prefix: sm);
+    .make-spacing(19xlarge, @prefix: sm);
+    .make-spacing(20xlarge, @prefix: sm);
+}
+
+@media @viewport--tablet {
+    .make-spacing(none, @prefix: md);
+    .make-spacing(xxsmall, @prefix: md);
+    .make-spacing(xsmall, @prefix: md);
+    .make-spacing(small, @prefix: md);
+    .make-spacing(medium, @prefix: md);
+    .make-spacing(large, @prefix: md);
+    .make-spacing(xlarge, @prefix: md);
+    .make-spacing(xxlarge, @prefix: md);
+    .make-spacing(3xlarge, @prefix: md);
+    .make-spacing(4xlarge, @prefix: md);
+    .make-spacing(5xlarge, @prefix: md);
+    .make-spacing(6xlarge, @prefix: md);
+    .make-spacing(7xlarge, @prefix: md);
+    .make-spacing(8xlarge, @prefix: md);
+    .make-spacing(9xlarge, @prefix: md);
+    .make-spacing(10xlarge, @prefix: md);
+    .make-spacing(11xlarge, @prefix: md);
+    .make-spacing(12xlarge, @prefix: md);
+    .make-spacing(13xlarge, @prefix: md);
+    .make-spacing(14xlarge, @prefix: md);
+    .make-spacing(15xlarge, @prefix: md);
+    .make-spacing(16xlarge, @prefix: md);
+    .make-spacing(17xlarge, @prefix: md);
+    .make-spacing(18xlarge, @prefix: md);
+    .make-spacing(19xlarge, @prefix: md);
+    .make-spacing(20xlarge, @prefix: md);
+}
+
+@media @viewport--notebook-and-laptop {
+    .make-spacing(none, @prefix: lg);
+    .make-spacing(xxsmall, @prefix: lg);
+    .make-spacing(xsmall, @prefix: lg);
+    .make-spacing(small, @prefix: lg);
+    .make-spacing(medium, @prefix: lg);
+    .make-spacing(large, @prefix: lg);
+    .make-spacing(xlarge, @prefix: lg);
+    .make-spacing(xxlarge, @prefix: lg);
+    .make-spacing(3xlarge, @prefix: lg);
+    .make-spacing(4xlarge, @prefix: lg);
+    .make-spacing(5xlarge, @prefix: lg);
+    .make-spacing(6xlarge, @prefix: lg);
+    .make-spacing(7xlarge, @prefix: lg);
+    .make-spacing(8xlarge, @prefix: lg);
+    .make-spacing(9xlarge, @prefix: lg);
+    .make-spacing(10xlarge, @prefix: lg);
+    .make-spacing(11xlarge, @prefix: lg);
+    .make-spacing(12xlarge, @prefix: lg);
+    .make-spacing(13xlarge, @prefix: lg);
+    .make-spacing(14xlarge, @prefix: lg);
+    .make-spacing(15xlarge, @prefix: lg);
+    .make-spacing(16xlarge, @prefix: lg);
+    .make-spacing(17xlarge, @prefix: lg);
+    .make-spacing(18xlarge, @prefix: lg);
+    .make-spacing(19xlarge, @prefix: lg);
+    .make-spacing(20xlarge, @prefix: lg);
+}
+
+@media @viewport--desktop {
+    .make-spacing(none, @prefix: lg);
+    .make-spacing(xxsmall, @prefix: lg);
+    .make-spacing(xsmall, @prefix: lg);
+    .make-spacing(small, @prefix: lg);
+    .make-spacing(medium, @prefix: lg);
+    .make-spacing(large, @prefix: lg);
+    .make-spacing(xlarge, @prefix: lg);
+    .make-spacing(xxlarge, @prefix: lg);
+    .make-spacing(3xlarge, @prefix: lg);
+    .make-spacing(4xlarge, @prefix: lg);
+    .make-spacing(5xlarge, @prefix: lg);
+    .make-spacing(6xlarge, @prefix: lg);
+    .make-spacing(7xlarge, @prefix: lg);
+    .make-spacing(8xlarge, @prefix: lg);
+    .make-spacing(9xlarge, @prefix: lg);
+    .make-spacing(10xlarge, @prefix: lg);
+    .make-spacing(11xlarge, @prefix: lg);
+    .make-spacing(12xlarge, @prefix: lg);
+    .make-spacing(13xlarge, @prefix: lg);
+    .make-spacing(14xlarge, @prefix: lg);
+    .make-spacing(15xlarge, @prefix: lg);
+    .make-spacing(16xlarge, @prefix: lg);
+    .make-spacing(17xlarge, @prefix: lg);
+    .make-spacing(18xlarge, @prefix: lg);
+    .make-spacing(19xlarge, @prefix: lg);
+    .make-spacing(20xlarge, @prefix: lg);
+}
+
+@media @viewport--large-tv {
+    .make-spacing(none, @prefix: lg);
+    .make-spacing(xxsmall, @prefix: lg);
+    .make-spacing(xsmall, @prefix: lg);
+    .make-spacing(small, @prefix: lg);
+    .make-spacing(medium, @prefix: lg);
+    .make-spacing(large, @prefix: lg);
+    .make-spacing(xlarge, @prefix: lg);
+    .make-spacing(xxlarge, @prefix: lg);
+    .make-spacing(3xlarge, @prefix: lg);
+    .make-spacing(4xlarge, @prefix: lg);
+    .make-spacing(5xlarge, @prefix: lg);
+    .make-spacing(6xlarge, @prefix: lg);
+    .make-spacing(7xlarge, @prefix: lg);
+    .make-spacing(8xlarge, @prefix: lg);
+    .make-spacing(9xlarge, @prefix: lg);
+    .make-spacing(10xlarge, @prefix: lg);
+    .make-spacing(11xlarge, @prefix: lg);
+    .make-spacing(12xlarge, @prefix: lg);
+    .make-spacing(13xlarge, @prefix: lg);
+    .make-spacing(14xlarge, @prefix: lg);
+    .make-spacing(15xlarge, @prefix: lg);
+    .make-spacing(16xlarge, @prefix: lg);
+    .make-spacing(17xlarge, @prefix: lg);
+    .make-spacing(18xlarge, @prefix: lg);
+    .make-spacing(19xlarge, @prefix: lg);
+    .make-spacing(20xlarge, @prefix: lg);
+}

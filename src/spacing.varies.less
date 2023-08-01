@@ -1,0 +1,55 @@
+@import "viewport.less";
+
+@default-spacing: 1rem;
+@medium-spacing: 1.5rem;
+@big-spacing: 2rem;
+
+@spacing--none: 0;
+@spacing--xxsmall: 0.25rem;
+@spacing--xsmall: 0.5rem;
+@spacing--small: 0.75rem;
+
+@spacing--medium: 1rem;
+@spacing--large: 1.5rem;
+@spacing--xlarge: 1.75rem;
+
+@spacing--xxlarge: 2rem;
+@spacing--3xlarge: 2.25rem;
+@spacing--4xlarge: 2.5rem;
+@spacing--5xlarge: 2.75rem;
+
+@spacing--6xlarge: 3rem;
+@spacing--7xlarge: 3.25rem;
+@spacing--8xlarge: 3.5rem;
+@spacing--9xlarge: 3.75rem;
+@spacing--10xlarge: 4rem;
+@spacing--11xlarge: 4.25rem;
+@spacing--12xlarge: 4.5rem;
+@spacing--13xlarge: 4.75rem;
+@spacing--14xlarge: 5rem;
+@spacing--15xlarge: 5.25rem;
+@spacing--16xlarge: 5.5rem;
+@spacing--17xlarge: 6rem;
+@spacing--18xlarge: 6.5rem;
+@spacing--19xlarge: 7rem;
+@spacing--20xlarge: 7.5rem;
+
+.default-spacing-bottom() {
+    &--margin-bottom {
+        margin-bottom: @default-spacing;
+    }
+}
+
+.default-spacing-top() {
+    &--margin-top {
+        margin-top: @default-spacing;
+    }
+}
+
+.pull-to-edges--sm() {
+    @media @viewport--sm {
+        margin-left: -@default-spacing;
+        margin-right: -@default-spacing;
+    }
+}
+
