@@ -11,6 +11,27 @@
     overflow: auto;
     background-color: @general-modal-box-background-alpha-color;
 
+    &--header {
+        padding: 2px 16px;
+        background-color: @general-modal-box-background-footer-header;
+        border-radius: 40px 40px 0 0;
+        color: white;
+    }
+
+    &--footer {
+        padding: 2px 16px;
+        border-radius: 0 0 40px 40px;
+        background-color: @general-modal-box-background-footer-header;
+        color: white;
+    }
+
+    &-body {
+        padding: 2px 0;
+        background-color: @general-modal-box-content-background-color;
+        border-left: 3px solid @general-modal-box-background-footer-header;
+        border-right: 3px solid @general-modal-box-background-footer-header;
+    }
+
     &-html-body {
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -21,6 +42,31 @@
         padding: 1rem;
         border: 1px solid @general-modal-box-content-border;
         width: 40%;
+
+        &--header-footer {
+            position: relative;
+            background-color: transparent;
+            margin: 20% auto;
+            padding: 0;
+            border: 1px solid #888;
+            border-radius: 40px 40px 40px 40px;
+            width: 80%;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s
+        }
+    }
+
+    @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0} 
+        to {top:0; opacity:1}
+    }
+      
+    @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
     }
 
     &-close {
@@ -34,6 +80,19 @@
             color: @general-modal-box-close-and-focus-color;
             text-decoration: none;
             cursor: pointer;
+        }
+
+        &--capital-x {
+            clear: unset;
+            float: right;
+            font-size: 28px;
+
+            &:hover,
+            &:focus {
+                color: @general-modal-box-close-and-focus-color;
+                text-decoration: none;
+                cursor: pointer;
+            }
         }
     }
 }
