@@ -1,0 +1,49 @@
+@import "banner.varies.less";
+
+.banner {
+    color: @banner-gray-lighten-white-font-color;
+    height: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-heading {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 7rem;
+        font-weight: 400;
+        margin-bottom: 0;
+        animation: anim 2s;
+    }
+
+    &-paragraph {
+        font-size: 3.5rem;
+        font-weight: 300;
+        animation: anim 1.5s .5s backwards;
+    }
+
+    &-button {
+        width: 21rem;
+        padding: 1.2rem 2rem;
+        font-size: 2rem;
+        color: @banner-button-more-lighten-black-font-color;
+        letter-spacing: .1rem;
+        border: none;
+        border-radius: 10rem;
+        outline: none;
+        background: linear-gradient(to right, @banner-button-dark-blue-background-color, @banner-button-more-lighten-blue-background-color);
+        cursor: pointer;
+        border: 1px solid #1c5485;
+        animation: anim 1s 1s backwards;
+    }
+
+    &-button:hover {
+        background: linear-gradient(to left, @banner-button-dark-blue-background-color, @banner-button-more-lighten-blue-background-color);
+        border: 1px solid #92d4ff;
+    }
+
+    &-button:active {
+        transform: translateY(.2rem);
+    }
+
+}
