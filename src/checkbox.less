@@ -1,0 +1,25 @@
+@import "checkbox.varies.less";
+
+.checkbox {
+
+    &:checked {
+
+        & ~ .navigation {
+            color: white;
+        }
+
+        & ~ .sidebar .line-1 {
+            transform: rotate(-405deg) translate(-12px, 6px);
+            width: 2.5rem;
+        }
+
+        & ~ .sidebar .line-2 {
+            opacity: 0;
+        }
+
+        & ~ .sidebar .line-3 {
+            transform: rotate(405deg) translate(-12px, -6px);
+            width: 2.5rem;
+        }
+    }
+}
