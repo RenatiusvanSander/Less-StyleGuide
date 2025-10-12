@@ -1,3 +1,5 @@
+@import "common-styles.varies.less";
+
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -13,5 +15,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: aliceblue;
+  background-color: @common-styles-body-background-color;
+}
+
+.year {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: @common-styles-font-color-year;
 }
