@@ -1,0 +1,32 @@
+@import "button.varies.less";
+
+.tutoring3-button {
+    background-color: @tutoring3-light-pink-white-background-color;
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: @tutoring3-middle-blue-font-color;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &--user-select-none {
+        user-select: none;
+    }
+}
+
+.forbidden-button {
+    color: @button-white-font-color;
+    font-size: 18px;
+    margin: auto;
+    display: block;
+    width: 200px;
+    border-radius: 25px;
+
+    &:hover {
+        background-color: @forbidden-button-hover-background-color;
+    }
+}

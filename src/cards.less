@@ -1,0 +1,46 @@
+@import "cards.varies.less";
+
+.forbidden-card {
+    @media (min-width:993px) {
+        width: 49.99999%;
+        padding: 2% 3%;
+    }
+
+    @media (max-width:601px) {
+                width: 85.99999%;
+        padding: 2% 3%;
+    }
+}
+
+.forbidden-box {
+    -webkit-text-size-adjust: 100%;
+    border: solid 1px @forbidden-box-color;
+    background-color: @forbidden-box-color;
+    border-radius: 5px;
+    padding: 24px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+
+    h2 {
+        font-size: 45px;
+        font-weight: 700;
+        margin: 10px 0;
+        color: black;
+    }
+
+    h5 {
+        color: #3a3a3a;
+        margin: 10px 0;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &-text {
+        height: 70px;
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+}
+
+
