@@ -15,14 +15,14 @@
         padding: 2px 16px;
         background-color: @general-modal-box-background-footer-header;
         border-radius: 40px 40px 0 0;
-        color: white;
+        color: @general-modal-box-white-font-color;
     }
 
     &--footer {
         padding: 2px 16px;
         border-radius: 0 0 40px 40px;
         background-color: @general-modal-box-background-footer-header;
-        color: white;
+        color: @general-modal-box-white-font-color;
     }
 
     &-body {
@@ -48,10 +48,10 @@
             background-color: transparent;
             margin: 20% auto;
             padding: 0;
-            border: 1px solid #888;
+            border: 1px solid @general-modal-box-header-footer-font-color;
             border-radius: 40px 40px 40px 40px;
             width: 80%;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 4px 8px 0 @general-modal-box-content-header-footer-box-shadow-color,0 6px 20px 0 @general-modal-box-content-header-footer-box-shadow-second-color;
             -webkit-animation-name: animatetop;
             -webkit-animation-duration: 0.4s;
             animation-name: animatetop;
