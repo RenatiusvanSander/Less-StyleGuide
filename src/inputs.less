@@ -59,7 +59,7 @@
 
     &.one input {
         background: none;
-        border: 2px solid #1410db;
+        border: 2px solid @input-one-placeholder-blue-border-color;
         transition: border-color 0.3s ease;
     }
 
@@ -71,7 +71,7 @@
     &.one input.dirty,
     &.custom-field.one input:not(:placeholder-shown),
     &.one input:focus {
-        border-color: #1410db;
+        border-color: @input-one-placeholder-blue-border-color;
         transition-delay: 0.1s;
     }
 
@@ -81,8 +81,8 @@
         top: 0;
         font-size: 16px;
         font-weight: 700;
-        color: #1410db;
-        background: #dde5eb;
+        color: @input-one-placeholder-blue-border-color;
+        background: @one-input-focus-placeholder-background-color;
         width: auto;
         font-family: sans-serif;
     }
@@ -94,7 +94,7 @@
     -webkit-appearance: none;
     -ms-progress-appearance: none;
     -moz-appearance: none;
-    background: #f2f2f2;
+    background: @tutorial3-input-background-color;
     padding: 12px;
     border-radius: 3px;
     font-family: sans-serif;
