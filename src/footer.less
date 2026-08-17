@@ -3,4 +3,74 @@
 .footer {
     margin-left: 8rem;
     border:  1px solid @footer-middle-blue-lighter-blue-border-color;
+
+    &-heading-h3 {
+        font-size: 2.5rem;
+        font-weight: 300;
+        color: @footer-blue-background-color;
+        margin: 0.25rem 0 0.5rem 0;
+        width: 200px;
+        text-align: center;
+        margin: 0 0 1rem;
+    }
+
+    &-list {
+        text-align: left;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        &-item {
+            margin-bottom: 1rem;
+        }
+
+        &-link {
+            font-size: 1.3rem;
+            text-decoration: none;
+            color: @footer-blue-most-lightener-font-color;
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-bottom: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    &-input {
+        width: 17rem;
+        padding: 0;
+        font-family: 'Josefins Sans', sans-serif;
+        font-size: 1.8rem;
+        color: @footer-blue-font-color;
+        outline: none;
+    }
+
+    &-btn {
+        padding: 1rem;
+        background-color: @footer-button-background-color;
+        color: @footer-button-color;
+        border: 1px solid @footer-button-background-color;
+        transition: all .5s;
+
+        &:hover {
+            border: 1px solid @footer-button-color;
+            color: @footer-button-font-color;
+            font-weight: 500;
+        }
+    }
+
+    &-image {
+        width: 60%;
+        height: 75%;
+        backface-visibility: hidden;
+        transition: all .5s;
+
+        &:hover {
+            transform: scale(1.85);
+            opacity: .8;
+        }
+    }
 }
