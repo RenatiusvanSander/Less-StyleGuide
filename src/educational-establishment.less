@@ -1,0 +1,31 @@
+@import "educational-establishment.varies.less";
+
+.educational-establishment {
+
+    &-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &-tile {
+        width: 37%;
+        height: 60px;
+        margin-bottom: 1rem;
+        padding: 2rem;
+        font-weight: 600;
+        border: 3px solid @educational-establishment-tile-background-color;
+        transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        &--end {
+            margin-bottom: 0;
+        }
+
+        &:hover,
+        &:focus {
+            border: 3px solid @educational-establishment-tile-hover-border-color;
+            color:@educational-establishment-tile-hover-font-color;
+        }
+    }
+}

@@ -8,6 +8,10 @@
             color: @checkbox-checked-checked-navigation-font-color;
         }
 
+        & ~ .navigation--2 {
+            left: 8rem;
+        }
+
         & ~ .sidebar .line-1 {
             transform: rotate(-405deg) translate(-12px, 6px);
             width: 2.5rem;
@@ -18,6 +22,20 @@
         }
 
         & ~ .sidebar .line-3 {
+            transform: rotate(405deg) translate(-12px, -6px);
+            width: 2.5rem;
+        }
+
+        & ~ .sidebar--2 .line-1 {
+            transform: rotate(-405deg) translate(-12px, 6px);
+            width: 2.5rem;
+        }
+
+        &  ~ .sidebar--2 .line-2 {
+            opacity: 0;
+        }
+
+        & ~ .sidebar--2 .line-3 {
             transform: rotate(405deg) translate(-12px, -6px);
             width: 2.5rem;
         }
