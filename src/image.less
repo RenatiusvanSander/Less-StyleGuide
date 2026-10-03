@@ -1,4 +1,5 @@
 @import "image.varies.less";
+@import "viewports.less";
 
 .image {
     width: 32rem;
@@ -29,5 +30,9 @@
         width: 12rem;
         margin: .4rem;
         overflow: hidden;
+
+        @media @viewport--wxga-plus-desktop {
+            width: 7rem;
+        }
     }
 }

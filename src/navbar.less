@@ -1,4 +1,5 @@
 @import "navbar.varies.less";
+@import "viewports.less";
 
 .navbar2 {
 
@@ -14,6 +15,22 @@
         grid-row: 1/2;
         margin: 0;
         padding: 0;
+
+        @media @viewport--svga {
+            grid-column: 11 / 36;
+        }
+
+        @media @viewport--wxga-desktop {
+            grid-column: 16 / 36;
+        }
+
+        @media @viewport--wxga-plus-desktop {
+            grid-column: 17 / 36;
+        }
+
+        @media @viewport--wsxga-plus-desktop {
+            grid-column: 14 / 36;
+        }
     }
 
     &-list {
@@ -37,5 +54,12 @@
                 padding: 0;
             }
         }
+    }
+}
+
+.navbar {
+
+    @media @viewport--svga {
+        height: 540px;
     }
 }

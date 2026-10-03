@@ -1,4 +1,5 @@
 @import "responsive.varies.less";
+@import "viewports.less";
 
 .responsive {
 
@@ -16,6 +17,10 @@
         height: 32px;
         background-color: @responsive-navbar-background-color;
         z-index: 1000;
+
+        @media @viewport--svga {
+            grid-row: 1/1;
+        }
     }
 
     &-sidebar {
@@ -29,7 +34,13 @@
        display: grid;
         background-color: @responsive-main-background-color;
         grid-column: 2/2;
-        grid-row: 2/2; 
+        grid-row: 2/2;
+
+        @media @viewport--svga {
+          grid-column: 1/1;
+          grid-row: 3/3;
+          background-color: transparent;
+        }
     }
 
     &-footer {
@@ -39,5 +50,10 @@
         grid-row: 3/3;
         z-index: 11;
         height: 10vh;
+
+        @media @viewport--svga {
+          grid-column: 1/1;
+          grid-row: 4/4;
+        }
     }
 }

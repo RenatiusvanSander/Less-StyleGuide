@@ -1,4 +1,5 @@
 @import "banner.varies.less";
+@import "viewports.less";
 
 .banner {
     color: @banner-gray-lighten-white-font-color;
@@ -8,18 +9,40 @@
     align-items: center;
     justify-content: center;
 
+    @media @viewport--wxga-desktop {
+        max-height: 34rem;
+    }
+
+    @media @viewport--wxga-plus-desktop {
+        max-height: 39rem;
+    }
+    
+    @media @viewport--wsxga-plus-desktop {
+        max-height: 39rem;
+    }
+
+
     &-heading {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 7rem;
         font-weight: 400;
         margin-bottom: 0;
         animation: anim 2s;
+
+        @media @viewport--wxga-desktop {
+            font-size: 5rem;
+        }
     }
 
     &-paragraph {
         font-size: 3.5rem;
         font-weight: 300;
         animation: anim 1.5s .5s backwards;
+
+        @media @viewport--wxga-desktop {
+            font-size: 1.75rem;
+            font-weight: 400;
+        }
     }
 
     &-button {
@@ -35,6 +58,11 @@
         cursor: pointer;
         border: 1px solid @banner-button-more-darker-blue-border-color;
         animation: anim 1s 1s backwards;
+
+        @media @viewport--wxga-desktop {
+            width: 15rem;
+            padding: 0.6rem 1rem;
+        }
     }
 
     &-button:hover {

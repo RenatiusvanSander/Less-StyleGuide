@@ -1,4 +1,5 @@
 @import "tutoring.varies.less";
+@import "viewports.less";
 
 .tutoring {
 
@@ -8,5 +9,15 @@
         font-weight: 400;
         color: @tutoring-heading-font-color;
         letter-spacing: 0.2rem;
+
+        @media @viewport--wsxga-plus-desktop {
+            margin: 0;
+            color: @tutoring-heading-second-font-color;
+        }
+
+        @media @viewport--tablet {
+            margin: 0;
+            color: @tutoring-heading-second-font-color;
+        }
     }
 }

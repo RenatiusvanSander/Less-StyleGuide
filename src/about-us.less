@@ -1,10 +1,19 @@
 @import "about-us.varies.less";
+@import "viewports.less";
 
 .about-us {
     margin: 2rem 0 2rem 8rem;
     display: flex;
     background-color: @about-us-most-ligten-blue-background-color;
     border: 1px solid @about-us-middle-ligten-blue-border-color;
+
+    @media @viewport--svga {
+        margin: 0.5rem 0 0.5rem;
+    }
+
+    @media @viewport--wxga-plus-desktop {
+        border: none;
+    }
 
     &-content {
         flex: 0 1 50%;
@@ -16,6 +25,10 @@
         box-sizing: border-box;
         border: 1px solid @about-us-middle-ligten-blue-border-color;
         max-width: 886.4px;
+
+        @media @viewport--wxga-desktop {
+            padding: 5rem;
+        }
     }
 
     &-heading {
