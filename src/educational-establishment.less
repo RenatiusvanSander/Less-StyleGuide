@@ -8,6 +8,10 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media @viewport--mobile {
+            flex-direction: column;
+        }
     }
 
     &-content {
@@ -34,18 +38,42 @@
         border: 3px solid @educational-establishment-tile-background-color;
         transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
 
+        @media @viewport--mobile {
+            width: 40%;
+            margin-left: 5rem;
+        }
+
         @media @viewport--small-desktop {
             width: 30%;
         }
 
         &--end {
             margin-bottom: 0;
+
+            @media @viewport--mobile {
+                margin-bottom: 1rem;
+                margin-left: 5rem;
+            }
+        }
+
+        &--start {
+
+            @media @viewport--mobile {
+                margin-top: 1rem;
+            }
         }
 
         &:hover,
         &:focus {
             border: 3px solid @educational-establishment-tile-hover-border-color;
             color:@educational-establishment-tile-hover-font-color;
+        }
+    }
+
+    &-heading {
+
+        @media @viewport--mobile {
+            margin-left: 3.5rem;
         }
     }
 }

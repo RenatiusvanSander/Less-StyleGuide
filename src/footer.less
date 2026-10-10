@@ -17,6 +17,11 @@
         width: 200px;
         text-align: center;
         margin: 0 0 1rem;
+
+        @media @viewport--mobile {
+            text-align: left;
+            margin: 1rem 0 1rem;
+        }
     }
 
     &-list {
@@ -27,6 +32,12 @@
 
         &-item {
             margin-bottom: 1rem;
+
+            &-2 {
+                @media @viewport--mobile {
+                    margin-bottom: 0;
+                }
+            }
         }
 
         &-link {
@@ -55,6 +66,11 @@
         justify-content: left;
         padding-bottom: 3rem;
         margin-bottom: 3rem;
+
+        @media @viewport--mobile {
+            margin: 1rem 0 1rem;
+            padding-bottom: 0;
+        }
 
         @media @viewport--wxga-plus-desktop {
             margin: 0;
@@ -111,6 +127,11 @@
         height: 75%;
         backface-visibility: hidden;
         transition: all .5s;
+
+        @media @viewport--svga {
+            width: 80%;
+            height: 95%;
+        }
 
         &:hover {
             transform: scale(1.85);

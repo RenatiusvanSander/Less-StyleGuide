@@ -9,6 +9,10 @@
     align-items: center;
     justify-content: center;
 
+    @media @viewport--mobile {
+        align-items: unset;
+    }
+
     @media @viewport--wxga-desktop {
         max-height: 34rem;
     }
@@ -21,13 +25,18 @@
         max-height: 39rem;
     }
 
-
     &-heading {
         font-family: 'Josefin Sans', sans-serif;
         font-size: 7rem;
         font-weight: 400;
         margin-bottom: 0;
         animation: anim 2s;
+
+        @media @viewport--mobile {
+            text-wrap: balance;
+            font-size: 3.5rem;
+            margin-left: 1.5rem;
+        }
 
         @media @viewport--wxga-desktop {
             font-size: 5rem;
@@ -38,6 +47,11 @@
         font-size: 3.5rem;
         font-weight: 300;
         animation: anim 1.5s .5s backwards;
+
+        @media @viewport--mobile {
+            margin: 0 1rem 0;
+            font-size: 1.55rem;
+        }
 
         @media @viewport--wxga-desktop {
             font-size: 1.75rem;
@@ -58,6 +72,10 @@
         cursor: pointer;
         border: 1px solid @banner-button-more-darker-blue-border-color;
         animation: anim 1s 1s backwards;
+
+        @media @viewport--mobile {
+            margin: 1rem 4.5rem 0;
+        }
 
         @media @viewport--wxga-desktop {
             width: 15rem;

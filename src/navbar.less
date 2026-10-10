@@ -10,11 +10,19 @@
     background-color: @navbar2-background-color;
     justify-content: space-between;
 
+    @media @viewport--mobile {
+        margin-left: 0;
+    }
+
     &-grid {
         grid-column: 32 / 36;
         grid-row: 1/2;
         margin: 0;
         padding: 0;
+
+        @media @viewport--mobile {
+            grid-column: 1 /9;
+        }
 
         @media @viewport--svga {
             grid-column: 11 / 36;
@@ -39,6 +47,10 @@
         list-style: none;
         margin: 0;
         padding: 0;
+
+        @media @viewport--svga {
+            align-items: flex-start;
+        }
 
         &-item {
             place-self: center;

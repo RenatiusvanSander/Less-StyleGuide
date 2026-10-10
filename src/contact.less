@@ -3,15 +3,22 @@
 
 .contact {
 
+    @media @viewport--mobile {
+        margin: 0;
+    }
+
     @media @viewport--small-desktop {
         margin-left: 1rem;
     }
     
-
         p {
             font-size: 1.5rem;
             color: @dark-lighter-blue-font-color;
             margin: 0;
+
+            @media @viewport--svga {
+                font-size: 1rem;
+            }
 
             @media @viewport--small-desktop {
                 font-size: 1.2rem;

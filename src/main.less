@@ -8,5 +8,11 @@
         /*background-color: #91dbff;*/
         background-color: @main-more-lighten-iced-blue-background-color;
         padding: 1rem;
+
+        @media @viewport--mobile {
+            flex-direction: column;
+            justify-content: unset;
+            align-items: center;
+        }
     }
 }

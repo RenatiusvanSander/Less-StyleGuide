@@ -51,9 +51,14 @@
         z-index: 11;
         height: 10vh;
 
+        @media @viewport--mobile {
+          width: 405px;
+        }
+
         @media @viewport--svga {
           grid-column: 1/1;
           grid-row: 4/4;
+          width: 728.39px;
         }
     }
 }

@@ -28,6 +28,11 @@
     transition: left .8s cubic-bezier(1, 0, 0, 1);
     top: -53.75rem;
 
+    @media @viewport--mobile {
+      align-items: revert-layer;
+      width: 36rem;
+    }
+
     @media @viewport--svga {
       top: -90vh;
       height: 90vh;
@@ -54,6 +59,11 @@
     text-transform: uppercase;
     text-decoration: none;
     transition: color .5s;
+
+    @media @viewport--mobile {
+      font-size: 1.5rem;
+      text-wrap: wrap;
+    }
 
     &::before {
       content: "";
@@ -136,6 +146,12 @@
       border-radius: 10rem;
       transition: background-color .3s;
 
+      @media @viewport--mobile {
+        margin: 0 0.75rem 0 0.75rem;
+        background-color: rgb(249 249 255 / 80%);
+        width:22rem;
+      }
+
       &:focus {
         background-color: @navigation-background-black-10-alpha-color;
       }
@@ -150,6 +166,10 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @media @viewport--mobile {
+      margin-left: 80px;
+    }
   }
 
   &-item {

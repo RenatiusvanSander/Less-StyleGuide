@@ -9,5 +9,10 @@
         background-color: @creator-background-color;
         padding: 0 1rem;
         color: @creator-font-color;
+
+        @media @viewport--mobile {
+            flex-direction: column;
+            align-items: unset;
+        }
     }
 }
