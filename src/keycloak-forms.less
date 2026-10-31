@@ -1,0 +1,11 @@
+@import "keycloak-colors.less";
+
+.pf-v5-c-form-control{
+    &.pf-m-error {
+        --pf-v5-c-form-control--PaddingRight: var(--pf-v5-c-form-control--m-error--PaddingRight);
+        --pf-v5-c-form-control--after--BorderBottomColor: @keycloak-login-input-form-error-bottom-border-color;
+        --pf-v5-c-form-control__icon--m-status--Color: @keycloak-login-form-control-error-icon-color;
+        --pf-v5-c-form-control__select--PaddingRight: var(--pf-v5-c-form-control__select--m-error--m-status--PaddingRight);
+        --pf-v5-c-form-control--after--BorderBottomWidth: var(--pf-v5-c-form-control--m-error--after--BorderBottomWidth);
+    }
+}

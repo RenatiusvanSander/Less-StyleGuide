@@ -1,0 +1,19 @@
+@import "keycloak-colors.less";
+    
+.pf-v5-button {
+
+    &.pf-m-primary {
+        background-color: @keycloak-login-primary-button-background-color;
+        color: var(--pf-global--Color--100);
+
+        &:hover {
+            color:  #fff;
+            background-color: @keycloak-login-primary-button-hover-background-color;
+        }
+
+        &:focus {
+            color:  #fff;
+            background-color: @keycloak-login-primary-button-focus-background-color;
+        }
+    }
+}

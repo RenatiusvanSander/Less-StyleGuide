@@ -1,1 +1,17 @@
 @import "keycloak-background.varies.less";
+@import "keycloak-colors.less";
+
+.login-pf {
+
+    body {
+        background: url("http://localhost:4200/media/background-main-site.jpg") no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+    }
+}
+
+#kc-info-wrapper {
+    font-size: 13px;
+    padding: 15px 35px;
+    background-color: @keycloak-login-info-wrapper-background-color;
+}
