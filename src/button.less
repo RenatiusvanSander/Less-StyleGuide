@@ -1,4 +1,5 @@
 @import "button.varies.less";
+@import "colors.less";
 
 .tutoring3-button {
     background-color: @tutoring3-light-pink-white-background-color;
@@ -21,6 +22,14 @@
         border-radius: 25px;
     }
 
+    &--margin {
+
+        &__horizontal-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
     &--button {
         color: @button-white-font-color;
         font-size: 26px;
@@ -30,6 +39,16 @@
         
         &:hover {
             background-color: @tutoring3-button-button-hover-background-color;
+        }
+    }
+
+    &--background-color {
+        &__blue {
+            background-color: @tutoring3-button-button-hover-background-color;
+
+            &:hover {
+                background-color: @blue-button-satisfied-blue-color;
+            }
         }
     }
 }
